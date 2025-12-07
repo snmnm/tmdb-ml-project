@@ -1,27 +1,43 @@
-## Movie Rating Predictor
+# Movie Rating Predictor
 
-Random Forest modeli kullanarak bir filmin IMDb benzeri puanını tahmin eden ML projesi.
+Filmlerin temel özelliklerini kullanarak IMDb benzeri puan tahmini yapan bir makine öğrenimi modeli. Proje; veri temizleme, özellik mühendisliği, model eğitimi ve değerlendirme aşamalarını içerir. Son aşamada Gradio ile basit bir tahmin arayüzü sunulmaktadır.
 
-### Pipeline
-	•	EDA
-	•	Baseline model
-	•	Feature engineering
-	•	Hyperparameter tuning
-	•	Model evaluation
-	•	Gradio ile mini uygulama
+## Proje Açıklaması
+Film bütçesi, hasılatı, süre, popülarite, oy sayısı ve metaveri bilgileri kullanılarak bir Random Forest regresyon modeli eğitilmiştir. Amaç, yapım aşamasındaki filmler için puan tahmini yapabilmektir.
 
-### Sonuçlar
-	•	Baseline R²: 0.6235 → Optimized R²: 0.6283
-	•	MAE: 0.5425 → 0.5359
-	•	RMSE: 0.7535 → 0.7486
+## Pipeline
+- EDA
+- Baseline model
+- Feature engineering
+- Hyperparameter tuning
+- Model evaluation
+- Gradio arayüzü ile inference
 
-### Kullanılan Özellikler
-	•	Log budget, log revenue, log popularity, log vote count
-	•	Movie age
-	•	Genre count
-	•	Keyword count
-	•	Ratio features (budget_per_minute, popularity_per_vote)
+## Sonuçlar
+- R²: 0.6235 → 0.6283  
+- MAE: 0.5425 → 0.5359  
+- RMSE: 0.7535 → 0.7486  
 
-### App
+## Kullanılan Teknolojiler
+Python, Pandas, Scikit-Learn, Matplotlib, Joblib, Gradio
 
-Basit Gradio arayüzü ile tahmin alınabilir.
+## Local Kurulum
+```bash
+pip install -r requirements.txt
+python src/train.py
+python app.py
+```
+
+## Repo Yapısı
+```
+src/
+notebooks/
+data/
+models/
+app.py
+requirements.txt
+README.md
+```
+
+## İletişim
+sudesagmen@gmail.com
