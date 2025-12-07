@@ -1,3 +1,9 @@
+---
+title: Movie Rating Predictor
+sdk: streamlit
+app_file: app.py
+---
+
 # Movie Rating Predictor
 
 Filmlerin temel özelliklerini kullanarak IMDb benzeri puan tahmini yapan bir makine öğrenimi modeli. Proje; veri temizleme, özellik mühendisliği, model eğitimi ve değerlendirme aşamalarını içerir. Son aşamada Gradio ile basit bir tahmin arayüzü sunulmaktadır.
