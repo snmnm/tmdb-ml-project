@@ -1,8 +1,8 @@
----
-title: Movie Rating Predictor
-sdk: streamlit
-app_file: app.py
----
+## Live Demo  
+Bu projenin çalışan Streamlit uygulamasına buradan ulaşabilirsiniz:
+
+https://huggingface.co/spaces/sudesagmen/movie-rating-prediction
+
 
 # Movie Rating Predictor
 
